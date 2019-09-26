@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{latexsym}%,pstricks,color,epic,eepic}
+\usepackage{multicol}
+\usepackage{tikz-cd}
+\usepackage[all]{xy}
+\usetikzlibrary{cd}
+
+\hoffset = -50pt
+\voffset = -50pt
+\textwidth = 500pt
+\textheight = 615pt
+
+\def\IR{{\rm I\!R}}  %for real numbers
+\def\IN{{\rm I\!N}}  %for integer numbers
+\def\IC{{\rm C}\llap{\vrule height7.1pt width1pt
+     depth-.4pt\phantom t}} %for complex numbers \def\covD{{\rmI\!D}}
+\def\IQ{{\rm Q}\llap{\vrule height7.7pt width1pt
+     depth-.4pt\phantom t}} %for complex numbers \def\covD{{\rmI\!D}}
+
+%   Si pones en tus definiciones las siguientes instrucciones:
+
+\font\cmss=cmss10
+\font\cmsss=cmss10 at 7pt
+
+\def\IZ{\relax\ifmmode\mathchoice
+{\hbox{\cmss Z\kern-.4em Z}}{\hbox{\cmss Z\kern-.4em Z}}
+{\lower.9pt\hbox{\cmsss Z\kern-.4em Z}}
+{\lower1.2pt\hbox{\cmsss Z\kern-.4em Z}}\else{\cmss Z\kern-.4em Z}\fi}
+
+%   podr'as usar  $ \IZ $  para denotar los enteros.
+
+
+%---------------*******************************------------------------
+
+% Definition of title page:
+\title{\textsf{
+aqui va el título
+}}
+\author{autor}
+%\pagestyle{headings}
+%\date{10 de octubre de 2006}
+
+\begin{document}
+
+  \maketitle
+
+
+
+asi como decia en clase las citas se hace asi: bla, bla~\cite{3} bla, bla, bla
+%\arrow[d,dash] 
+
+
+
+$$
+\begin{tikzcd}[column sep=small, row sep=tiny]
+& P \ar[r, Rightarrow] & (P \ar[r, Rightarrow] & Q ) \\
+& C \ar[drr, bend right = 95, dash]      & C \ar[r, bend right = 90, dash]  & C \\
+&   													   &                  & \parbox{0.5cm}{\flushleft C} \\
+&  &\parbox{0.5cm}{\flushright C} &
+\end{tikzcd}
+$$
+
+
+ahora una mas grande:
+
+$$
+\begin{tikzcd}[column sep=small, row sep=tiny]
+& ((P \parbox{0.5cm}{\centering$\wedge$} & Q)\ar[r, Rightarrow] & B) \ar[r,Rightarrow]   & (P \ar[r, Rightarrow] & (P \ar[r, Rightarrow] & Q )) \\
+& C \ar[r, bend right = 90, dash] & C &  F & C \ar[drr, bend right = 95, dash]      & C \ar[r, bend right = 90, dash]  & F \\
+& \parbox{0.5cm}{\flushright F} \ar[dr, bend right = 95, dash] &  & 									   &                  & \parbox{0.5cm}{\flushleft F} \\
+& & F & &  &\parbox{0.5cm}{\flushright F} &
+\end{tikzcd}
+$$
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem{1}  Calculo; Robert T. Smith, Roland B. Minton; McGraw Hill; 2000.
+\bibitem{2}  Calculo diferencial e integral; Frank Ayres Jr:, Elliot Mendelson; McGraw Hill ;3ra Edicion.
+\bibitem{3}  Calculo una variable; Thomas; Editorial Pearson; undécima edición.
+\bibitem{4}  El calculo con geometría analítica; Louis Leithold; editorial Harla; 6ta edición; año 1992.
+\end{thebibliography}
+
+\end{document}
