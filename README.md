@@ -5,4 +5,4 @@ you will find some Latex scripts, I wrote this scripts to help my students to pr
 repository you will find some specific scripts for the Post-Graduated Thesis of the Engineer Faculty of State University
 of Chihuahua, where I work as profesor for undergraduated students and postgraduated students. 
 
-To run teh FINGUACH_template you need to download the files imagen1, biblio.bib
+To run teh FINGUACH_template you need to download the files imagen1, biblio and LOGO_FINGUACH. Otherwise it will not run.
