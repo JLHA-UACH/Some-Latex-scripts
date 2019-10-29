@@ -11,9 +11,13 @@ The bibliography is requiered to be in bibtex format because the citations are i
 to compile the FINGUACH_template.tex:
 
 pdflatex FINGUACH_template.tex
+
 bibtex biblio.bib
+
 bibtex biblio.bib
+
 pdflatex FINGUACH_template.tex
+
 pdflatex FINGUACH_template.tex
 
 
