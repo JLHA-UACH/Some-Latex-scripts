@@ -6,3 +6,14 @@ repository you will find some specific scripts for the Post-Graduated Thesis of 
 of Chihuahua, where I work as profesor for undergraduated students and postgraduated students. 
 
 To run teh FINGUACH_template you need to download the files imagen1, biblio and LOGO_FINGUACH. Otherwise it will not run.
+The bibliography is requiered to be in bibtex format because the citations are in APA format.
+
+to compile the FINGUACH_template.tex:
+
+pdflatex FINGUACH_template.tex
+bibtex biblio.bib
+bibtex biblio.bib
+pdflatex FINGUACH_template.tex
+pdflatex FINGUACH_template.tex
+
+
